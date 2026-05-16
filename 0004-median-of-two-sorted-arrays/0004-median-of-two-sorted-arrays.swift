@@ -1,9 +1,6 @@
 class Solution {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
-        var mergedArray = nums1
-        for i in nums2 {
-            mergedArray.append(i)
-        }
+        var mergedArray = nums1 + nums2
         mergedArray = mergedArray.sorted()
         print(mergedArray)
         if mergedArray.count == 1 {
